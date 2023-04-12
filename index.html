@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box login">
+            <form id="login-form" class="form form-login">
+                <h1>Login</h1>
+                <div class="login-types">
+                    <ul>
+                        <li class="social-media facebook"></li>
+                        <li class="social-media google"></li>
+                        <li class="social-media linkedin"></li>
+                    </ul>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="login-btn" class="send-btn">Entrar</button>
+            </form>
+            <div class="presentation-login">
+                <div>
+                    <h2>Olá, mais uma vez!</h2>
+                    <p class="presentation-paragraph">Entre com a sua conta pessoal e inicie a sua jorgada </p>
+                </div>
+                <a href="#" id="signup-link" onclick="openRegister()">Não tem uma conta? Cadastre-se aqui.</a>
+
+            </div>
+        </div>
+        <div class="box register">
+            <div class="presentation-register">
+                <div>
+                    <h2>Seja bem vindo!</h2>
+                    <p class="presentation-paragraph">Cadastre agora a sua conta pessoal e inicie a sua jorgada </p>
+                </div>
+                <a href="#" id="signup-link" onclick="openLogin()">Já tem uma Conta? Faça login aqui.</a>
+
+            </div>
+            <form id="login-form" class="form-register">
+                <h1>Cadastro</h1>
+                <div class="login-types">
+                    <ul>
+                        <li class="social-media facebook"></li>
+                        <li class="social-media google"></li>
+                        <li class="social-media linkedin"></li>
+                    </ul>
+                </div>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="login-btn" class="send-btn">Cadastrar</button>
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

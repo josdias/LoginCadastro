@@ -1,0 +1,35 @@
+.form-register {
+    border-radius: 0 10px 10px 0;
+  }
+.presentation-register {
+  padding: 30px;
+  width: 31vw;
+  height: 51vh;
+  background: var(--pink-neon);
+  color: var(--white);
+  border-radius: 10px 0 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation-register div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+}
+
+.presentation-register div h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.register{
+    display: none;
+}

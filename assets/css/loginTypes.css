@@ -1,0 +1,29 @@
+.login-types{
+    width: 45%;
+}
+.login-types ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.login-types ul li {
+    list-style: none;
+    width: 35px;
+    height: 35px;
+}
+
+.social-media{
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+.facebook {
+    background-image: url('/assets/icon/facebook.svg');
+}
+.google{
+    background-image: url('/assets/icon/google.svg');
+}
+.linkedin{
+    background-image: url('/assets/icon/linkedin.svg');
+}
