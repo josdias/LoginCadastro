@@ -31,13 +31,14 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit" id="login-btn" class="send-btn">Entrar</button>
+                <a href="#" id="signup-link" class="register-mobile" onclick="openRegisterMobile()">Não tem uma conta? Cadastre-se aqui.</a>
             </form>
             <div class="presentation-login">
                 <div>
                     <h2>Olá, mais uma vez!</h2>
                     <p class="presentation-paragraph">Entre com a sua conta pessoal e inicie a sua jornada </p>
                 </div>
-                <a href="#" id="signup-link" onclick="openRegister()">Não tem uma conta? Cadastre-se aqui.</a>
+                <a href="#" id="signup-link" class="register-desktop" onclick="openRegister()">Não tem uma conta? Cadastre-se aqui.</a>
 
             </div>
         </div>
@@ -59,10 +60,10 @@
                         <li class="social-media linkedin"></li>
                     </ul>
                 </div>
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
                 <div class="form-group">
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" name="email" required>
@@ -72,6 +73,7 @@
                     <input type="password" id="password" name="password" required>
                 </div>
                 <button type="submit" id="login-btn" class="send-btn">Cadastrar</button>
+                <a href="#" id="signup-link" class="login-mobile" onclick="openLoginMobile()">Já tem uma Conta? Faça login aqui.</a>
             </form>
         </div>
 

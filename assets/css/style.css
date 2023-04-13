@@ -1,6 +1,8 @@
+@import url("login.css");
 @import url("loginTypes.css");
 @import url("animation.css");
 @import url("register.css");
+@import url("mobile.css");
 
 :root {
   --black: #000000;
@@ -32,8 +34,6 @@ body {
 
   border: 1px solid var(--gray);
   border-radius: 10px;
-  border: 1px solid var(--gray);
-  border-radius: 10px;
   box-shadow: 7px 7px 10px 0px #cccccc;
 }
 
@@ -45,8 +45,7 @@ form {
   justify-content: center;
 }
 
-form,
-.presentation-login {
+form{
   padding: 30px;
   background-color: var(--white);
 
@@ -77,52 +76,6 @@ input {
   padding: 10px;
   border: 1px solid var(--gray);
   border-radius: 9px;
-}
-
-.send-btn {
-  background-color: var(--pink);
-  color: var(--white);
-  padding: 10px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-
-  margin: 0 25%;
-  width: 50%;
-}
-
-#signup-link {
-  margin-top: 20px;
-  text-align: center;
-  color: var(--white);
-  display: flex;
-  align-items: flex-end;
-  height: 5vh;
-}
-
-.presentation-login {
-  background: var(--pink-neon);
-  color: var(--white);
-  border-radius: 0 10px 10px 0;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.presentation-login div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50%;
-  justify-content: center;
-}
-
-.presentation-login div h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .register{

@@ -1,5 +1,5 @@
-.animation-left{
-    animation: slideLeft 1s ease-in-out forwards;
+.animation-left {
+  animation: slideLeft 1s ease-in-out forwards;
 }
 
 @keyframes slideLeft {
@@ -8,13 +8,13 @@
   }
   100% {
     transform: translateX(-100%);
-    
-  border-radius: 10px 0 0 10px;
+
+    border-radius: 10px 0 0 10px;
   }
 }
 
-.animation-right{
-    animation: slideRight 1s ease-in-out forwards;
+.animation-right {
+  animation: slideRight 1s ease-in-out forwards;
 }
 
 @keyframes slideRight {
@@ -23,9 +23,59 @@
   }
   100% {
     transform: translateX(100%);
-    
+
     border-radius: 0 10px 10px 0;
   }
 }
 
+.animation-down {
+  animation: slideDown 1s ease-in-out forwards;
+}
 
+@keyframes slideDown {
+  0%{
+    transform: translateY(0);;
+  }
+  100%{
+    transform: translateY(150%);
+  }
+}
+
+.animation-top-down{
+  animation: slideTopDown 1s ease-in-out forwards;
+}
+
+@keyframes slideTopDown{
+  0%{
+    transform: translateY(-150%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.animation-top{
+  animation: slideTop 1s ease-in-out forwards;
+}
+
+@keyframes slideTop{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(-150%);
+  }
+}
+
+.animation-down-top{
+  animation: slideDownTop 1s ease-in-out forwards;
+}
+
+@keyframes slideDownTop{
+  0%{
+    transform: translateY(150%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

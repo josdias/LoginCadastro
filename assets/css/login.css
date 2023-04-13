@@ -1,0 +1,55 @@
+.presentation-login {
+  padding: 30px;
+  background-color: var(--white);
+
+  width: 31vw;
+  height: 51vh;
+}
+.send-btn {
+  background-color: var(--pink);
+  color: var(--white);
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  margin: 0 25%;
+  width: 50%;
+}
+
+#signup-link {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  height: 5vh;
+}
+
+.register-desktop{
+  color: var(--white);
+}
+
+.presentation-login {
+  background: var(--pink-neon);
+  color: var(--white);
+  border-radius: 0 10px 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation-login div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  justify-content: center;
+}
+
+.presentation-login div h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width: 390px) {
+    .presentation-login,
+    .presentation-register{
+        display: none !important; 
+    }
+
+    .register-mobile{
+        color: var(--black);
+    }
+
+    form{
+        width: 75vw !important;
+        border-radius: 10px 10px 10px 10px !important;
+    }
+}
