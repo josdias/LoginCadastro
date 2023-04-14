@@ -1,15 +1,39 @@
-@media screen and (max-width: 390px) {
-    .presentation-login,
-    .presentation-register{
-        display: none !important; 
-    }
+@media screen and (max-width: 680px) {
+  .presentation-login,
+  .presentation-register {
+    display: none !important;
+  }
 
-    .register-mobile{
-        color: var(--black);
-    }
+  .register-mobile {
+    color: var(--black);
+  }
 
-    form{
-        width: 75vw !important;
-        border-radius: 10px 10px 10px 10px !important;
-    }
+  form {
+    width: 75vw !important;
+    border-radius: 10px 10px 10px 10px !important;
+  }
+
+  .theme {
+    top: 22% !important;
+    left: unset !important;
+    right: 5% !important;
+  }
+
+  .dark .login-mobile,
+  .dark .register-mobile {
+    display: block !important;
+    color: var(--white) !important;
+  }
+
+  .login-mobile,
+  .register-mobile {
+    display: block !important;
+    color: var(--black) !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .theme {
+    left: 12% !important;
+  }
 }

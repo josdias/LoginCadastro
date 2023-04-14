@@ -5,56 +5,78 @@ const formRegister = document.querySelector(".form-register");
 const login = document.querySelector(".login");
 const register = document.querySelector(".register");
 
+const loginClass = formLogin.classList;
+const registerClass = formRegister.classList;
+
+/* remove class */
+
+function removeLogin() {
+  login.classList.add("remove");
+  login.classList.remove("add");
+  register.classList.add("add");
+  register.classList.remove("remove");
+}
+
+function removeRegister() {
+  login.classList.remove("remove");
+  login.classList.add("add");
+  register.classList.add("remove");
+  register.classList.remove("add");
+}
+
+function removeMobile() {
+  loginClass.remove("animation-down");
+  loginClass.remove("animation-down-top");
+  registerClass.remove("animation-top-down");
+  registerClass.remove("animation-top");
+}
+
+/* desktop */
+
 function openRegister() {
   presentationRegister.classList.remove("animation-right");
-  formRegister.classList.remove("animation-left");
+  registerClass.remove("animation-left");
   presentationLogin.classList.add("animation-left");
-  formLogin.classList.add("animation-right");
+  loginClass.add("animation-right");
   setTimeout(function () {
-    login.classList.add("remove");
-    login.classList.remove("add");
-    register.classList.add("add");
-    register.classList.remove("remove");
+    return removeLogin();
   }, 900);
+  return removeMobile();
 }
 
 function openLogin() {
   presentationLogin.classList.remove("animation-left");
-  formLogin.classList.remove("animation-right");
+  loginClass.remove("animation-right");
   presentationRegister.classList.add("animation-right");
-  formRegister.classList.add("animation-left");
+  registerClass.add("animation-left");
   setTimeout(function () {
-    login.classList.remove("remove");
-    login.classList.add("add");
-    register.classList.add("remove");
-    register.classList.remove("add");
+    return removeRegister();
   }, 900);
+  return removeMobile();
 }
 
 /* mobile */
 
 function openRegisterMobile() {
-  formLogin.classList.remove("animation-down-top");/* remove down top */
-  formRegister.classList.remove("animation-top"); /* remove top */
-  formLogin.classList.add("animation-down"); /* add down */
-  formRegister.classList.add("animation-top-down"); /* add top down */
+  loginClass.remove("animation-down-top");
+  registerClass.remove("animation-top");
+  loginClass.add("animation-down");
+  registerClass.add("animation-top-down");
   setTimeout(function () {
-    login.classList.add("remove");
-    login.classList.remove("add");
-    register.classList.add("add");
-    register.classList.remove("remove");
+    return removeLogin();
   }, 900);
 }
 
 function openLoginMobile() {
-  formRegister.classList.remove("animation-top-down"); /* remove top down */
-  formLogin.classList.remove("animation-down"); /* remove down */
-  formRegister.classList.add("animation-top"); /* add top */
-  formLogin.classList.add("animation-down-top"); /* add down top */
+  registerClass.remove("animation-top-down");
+  loginClass.remove("animation-down");
+  registerClass.add("animation-top");
+  loginClass.add("animation-down-top");
   setTimeout(function () {
-    login.classList.remove("remove");
-    login.classList.add("add");
-    register.classList.add("remove");
-    register.classList.remove("add");
+    return removeRegister();
   }, 900);
+}
+
+function changeTheme() {
+  document.body.classList.toggle("dark");
 }

@@ -33,3 +33,8 @@
 .register{
     display: none;
 }
+
+.login-mobile,
+.register-mobile{
+  display: none !important;
+}
